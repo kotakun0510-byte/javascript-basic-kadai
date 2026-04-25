@@ -29,3 +29,10 @@ body {
 .mistyped {
   background-color: red;
 }
+
+/* 現在のタイプ数が表示される領域 */
+#typeCount {
+  color: #888;
+  margin: 20px 0 0;
+  font-weight: bold;
+}
