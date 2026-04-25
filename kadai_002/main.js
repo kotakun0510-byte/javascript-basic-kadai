@@ -97,7 +97,9 @@ const rankCheck = score => {
 const gameOver = id => {
   clearInterval(id);
 
-  wrap.textContent = 'タイムアップ！';
+  typedfield.textContent = '';
+
+  untypedfield.textContent = 'タイムアップ！';
 
   setTimeout(() => {
     const result = confirm(rankCheck(score));
@@ -107,10 +109,6 @@ const gameOver = id => {
     }
   }, 10);
 
-  // OKボタンをクリックされたらリロードする
-  if(result == true) {
-    window.location.reload();
-  }
 };
 
 // カウントダウンタイマー
